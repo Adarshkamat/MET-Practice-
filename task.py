@@ -59,6 +59,7 @@ c=input("Enter task 3:")
 task={}
 task.update({"task1":a,"task2":bo,"task3":c})
 
+print(task)
 
 
 d=input("Update task2:")
@@ -67,8 +68,8 @@ print(task)
 
 
 
-e=input("DElete task 3: [True or False]")
-if True:
+e=bool(input("Delete task 3[True or False]:"))
+if e==True:
     task.pop("task3")
     print(task)
 else:
