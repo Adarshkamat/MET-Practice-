@@ -6,4 +6,3 @@ print(fruits)
 print(fruits[1:2][0][-1])
 
 
-

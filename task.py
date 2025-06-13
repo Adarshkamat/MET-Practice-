@@ -25,24 +25,52 @@ students = [
     #how many the user want
 # 4 Write the code
 
-menu = {
-    "Dosa":40,
-    "Idli":30,
-    "poori":45,
-    "vada":50,
-    "upma":30
-}
+# menu = {
+#     "Dosa":40,
+#     "Idli":30,
+#     "poori":45,
+#     "vada":50,
+#     "upma":30
+# }
 
-dish_1choice = input("What do you wnat for ur break fast: ")
-dish_1quantity=int(input("enter Quantity:"))
-dish_2choice = input("What do you wnat for ur break fast: ")
-dish_2quantity=int(input("enter Quantity:"))
+# dish_1choice = input("What do you wnat for ur break fast: ")
+# dish_1quantity=int(input("enter Quantity:"))
+# dish_2choice = input("What do you wnat for ur break fast: ")
+# dish_2quantity=int(input("enter Quantity:"))
 
-print("Your bill")
-bill = (menu.get(dish_1choice,"enter another dish")*dish_1quantity)+(menu.get(dish_2choice,"enter another dish")*dish_2quantity)
-print(bill)
-
-
+# print("Your bill")
+# bill = (menu.get(dish_1choice,"enter another dish")*dish_1quantity)+(menu.get(dish_2choice,"enter another dish")*dish_2quantity)
+# print(bill)
 
 
+#Build a simple script  to manage tasks using dictionary.
+ 
+#Ask user to enter task 1 name
+#Ask user to enter task 2 name
+#Ask user to enter task 3 name
+#Ask user to update task 2
+#Ask user to delete task 3
+#print final tasks
+
+a=input("Enter task 1:")
+bo=input("Enter task 2:")
+c=input("Enter task 3:")
+
+task={}
+task.update({"task1":a,"task2":bo,"task3":c})
+
+
+
+d=input("Update task2:")
+task.update({"task2":d})
+print(task)
+
+
+
+e=input("DElete task 3: [True or False]")
+if True:
+    task.pop("task3")
+    print(task)
+else:
+    print(task)
 
