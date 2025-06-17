@@ -30,3 +30,6 @@
 # at any point, only block will be executed in a given combo
 
 
+#16-6-25   Functions 
+
+#17-6-25 Local vs Global Variable
