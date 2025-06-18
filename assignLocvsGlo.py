@@ -1,3 +1,4 @@
+#17-6-25
 def q(*b):
      return sum(b)
 
