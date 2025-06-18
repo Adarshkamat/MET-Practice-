@@ -1,8 +1,7 @@
-#17-6-25
-def q(*b):
-     return sum(b)
+# def q(*b):
+#      return sum(b)
 
-print(q(1,3,2,4,5))
+# print(q(1,3,2,4,5))
 
 
 # def a(**b):
@@ -72,7 +71,7 @@ print(q(1,3,2,4,5))
 
 def validAge(age):
      while True:
-          a=int(input("enter Age:"))
+          a=input("enter Age:")
           if a==age:
                print(a)
                break

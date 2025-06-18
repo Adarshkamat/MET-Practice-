@@ -33,3 +33,43 @@
 #16-6-25   Functions 
 
 #17-6-25 Local vs Global Variable
+#18-6-25
+# ✅ What is isinstance() in Python?
+# isinstance() is a built-in Python function used to check whether an 
+# object is an instance of a particular type (or class).
+# print(isinstance(5, int))             # True
+# print(isinstance(5.0, float))         # True
+# print(isinstance("hello", str))       # True
+# print(isinstance([1, 2], list))       # True
+# print(isinstance(5, float))           # False
+
+def q(*b):
+     return sum(b)
+a=[1,2,3,3,4]
+print(q(a))
+# 🧠 What sum() expects:
+# The sum() function adds items in an iterable from left to right using +.
+
+# By default:
+
+# sum([1, 2, 3]) → (((1 + 2) + 3)) → 6
+# So it tries to do:
+
+# total = 0
+# for value in ([1, 2, 3, 3, 4],):
+#     total += value
+# This becomes:
+
+# total = 0
+# total += [1, 2, 3, 3, 4]  # ❌ Error!
+# ❌ Why is this an error?
+# You're trying to do:
+
+# 0 + [1, 2, 3, 3, 4]
+# 0 is an integer
+
+# [1, 2, 3, 3, 4] is a list
+
+# And you can’t add a list to an integer, so Python gives this error:
+
+# TypeError: unsupported operand type(s) for +: 'int' and 'list'
