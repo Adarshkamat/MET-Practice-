@@ -73,3 +73,8 @@ print(q(a))
 # And you can’t add a list to an integer, so Python gives this error:
 
 # TypeError: unsupported operand type(s) for +: 'int' and 'list'
+
+#19-6-25 
+#TASK
+ 
+          
