@@ -15,7 +15,12 @@ questions=[{
 count=0
 for i in questions:
     print("Question: ",i["question"])
-    print("Options: ",i["option"])
+    print(f"""Options: 
+    {i["option"][0]}
+    {i["option"][1]}a
+    {i["option"][2]}
+    {i["option"][3]}""")
+                
     a=input("Enter your answer - [a,b,c,d] : ")
     if a==i["answer"]:
         print("Correct Answer : ",a)
