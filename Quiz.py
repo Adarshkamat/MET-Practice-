@@ -17,7 +17,7 @@ for i in questions:
     print("Question: ",i["question"])
     print(f"""Options: 
     {i["option"][0]}
-    {i["option"][1]}a
+    {i["option"][1]}
     {i["option"][2]}
     {i["option"][3]}""")
                 
