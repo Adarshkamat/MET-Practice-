@@ -52,26 +52,52 @@ students = [
 #Ask user to delete task 3
 #print final tasks
 
-a=input("Enter task 1:")
-bo=input("Enter task 2:")
-c=input("Enter task 3:")
+# a=input("Enter task 1:")
+# bo=input("Enter task 2:")
+# c=input("Enter task 3:")
 
-task={}
-task.update({"task1":a,"task2":bo,"task3":c})
+# task={}
+# task.update({"task1":a,"task2":bo,"task3":c})
 
-print(task)
-
-
-d=input("Update task2:")
-task.update({"task2":d})
-print(task)
+# print(task)
 
 
+# d=input("Update task2:")
+# task.update({"task2":d})
+# print(task)
 
-e=bool(input("Delete task 3[True or False]:"))
-if e==True:
-    task.pop("task3")
-    print(task)
-else:
-    print(task)
+
+
+# e=bool(input("Delete task 3[True or False]:"))
+# if e==True:
+#     task.pop("task3")
+#     print(task)
+# else:
+#     print(task)
+
+
+questions=[{
+    "question":"India's Capital",
+    "option":["A.Delhi","b.Mumbai","c.Hyd","d.Banglore"],
+    "answer":"a"
+},{
+    "question":"Largest Continent",
+    "option":["A.Africa","b.Asia","c.sAmerica","d.Australia"],
+    "answer":"b"
+},{
+    "question":"color of mango ",
+    "option":["A.red","b.blue","c.green","d.yellow"],
+    "answer":"d"
+}]
+
+count=0
+for i in questions:
+    print("Question: ",i["question"])
+    print("Options: ",i["option"])
+    a=input("Enter your answer - [a,b,c,d] : ")
+    if a==i["answer"]:
+        count+=1
+
+print(f"Your score :{count}/3")
+
 
