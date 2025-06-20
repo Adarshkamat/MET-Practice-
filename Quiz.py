@@ -18,6 +18,7 @@ for i in questions:
     print("Options: ",i["option"])
     a=input("Enter your answer - [a,b,c,d] : ")
     if a==i["answer"]:
+        print("Correct Answer : ",a)
         count+=1
 
-print(f"Your score :{count}/3")
+print(f"Your score :{count}/3")  
