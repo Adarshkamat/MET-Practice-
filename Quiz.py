@@ -13,8 +13,10 @@ questions=[{
 }]
 
 count=0
+j=1
 for i in questions:
-    print("Question: ",i["question"])
+    print(f"Question {j}: {i["question"]}")
+    j+=1
     print(f"""Options: 
     {i["option"][0]}
     {i["option"][1]}

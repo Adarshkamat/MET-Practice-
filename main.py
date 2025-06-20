@@ -75,6 +75,12 @@ print(q(a))
 # TypeError: unsupported operand type(s) for +: 'int' and 'list'
 
 #19-6-25 
-#TASK
+#For loops
+
+#20-6-25
+#Quiz
+#nested loops
+
+
  
           
