@@ -68,3 +68,9 @@ print(f"Your Score for this Quiz is : {count}/{len(question)}")
 print("Q_no ur_ans  crct_ans")
 for k in history:
     print("",k)
+
+
+
+
+
+
