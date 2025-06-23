@@ -82,5 +82,6 @@ print(q(a))
 #nested loops
 
 
- 
-          
+#23-6-25
+#Assigned Teams
+#Given first Project 
