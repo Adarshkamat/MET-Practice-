@@ -85,3 +85,32 @@ print(q(a))
 #23-6-25
 #Assigned Teams
 #Given first Project 
+
+#24-6-25
+# class AC:
+
+#     def __init__(self, brand, color):
+
+#         self.brand = brand
+
+#         self.color = color
+
+#     def turn_on(self):
+
+#         print(f"Turning on {self.brand} AC...")
+
+#     def turn_off(self):
+
+#         print("Turning off AC...")
+
+# ac = AC('samsung', 'white')
+
+# ac.brand = 'LG'
+
+# ac2 = AC('HAIER', 'white')
+
+# print(ac2.brand)
+ 
+    
+
+ 
