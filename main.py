@@ -43,10 +43,10 @@
 # print(isinstance([1, 2], list))       # True
 # print(isinstance(5, float))           # False
 
-def q(*b):
-     return sum(b)
-a=[1,2,3,3,4]
-print(q(a))
+# def q(*b):
+#      return sum(b)
+# a=[1,2,3,3,4]
+# print(q(a))
 # 🧠 What sum() expects:
 # The sum() function adds items in an iterable from left to right using +.
 
@@ -110,7 +110,14 @@ print(q(a))
 # ac2 = AC('HAIER', 'white')
 
 # print(ac2.brand)
- 
+
+#25-06-2025
+animals=["cat","dog","monkey"]
+
+for i,a in enumerate(animals):
+    print(a+animals[(len(animals)-i-2-i)][0:2])  
+   
+
     
 
  
