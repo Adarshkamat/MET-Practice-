@@ -220,6 +220,34 @@ Room1.light.switch_on()
 # 4. Create a class Laptop and a class Battery. Let Laptop have a Battery instance. Add a method in
 # Battery called check_charge(). Call it from Laptop like laptop.battery.check_charge().
 class Laptop:
-    
+    def __init__(self,name,B):
+         self.name=name
+         self.B=B
+class Battery:
+    def __init__(self,Lap_battery):
+        self.Lap_bat=Lap_battery
+       
+    def check_charge(self,charge):
+        if charge >=50:
+            print("Charged")
+        else:
+            print("Battery Low")
+battery=Battery("DELLS")
+LAP=Laptop("dell",battery)
+
+LAP.B.check_charge(58)
+
 # 5. Create classes Mobile and Camera. The Mobile class should have a Camera object. Add a
 # take_picture() method to Camera and call it using mobile.camera.take_picture()
+class CAmera:
+    def __init__(self):
+        pass
+    def click(self):
+        print("Image Clicked")
+class Mobile:
+    def __init__(self,brand,cam):
+        self.brand=brand
+        self.cam=cam
+Cam=CAmera()
+redmi=Mobile("REdmi",Cam)
+redmi.cam.click()
