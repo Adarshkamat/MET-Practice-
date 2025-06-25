@@ -115,7 +115,7 @@
 animals=["cat","dog","monkey"]
 
 for i,a in enumerate(animals):
-    print(a+animals[(len(animals)-i-2-i)][0:2])  
+    print(a+animals[(i+1)%len(animals)][0:2])  
    
 
     
