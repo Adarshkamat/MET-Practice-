@@ -112,10 +112,24 @@
 # print(ac2.brand)
 
 #25-06-2025
-animals=["cat","dog","monkey"]
+# animals=["cat","dog","monkey"]
 
-for i,a in enumerate(animals):
-    print(a+animals[(i+1)%len(animals)][0:2])  
+# for i,a in enumerate(animals):
+#     print(a+animals[(i+1)%len(animals)][0:2])  
+
+#26-6-2025
+class DOG:
+    def __init__(self,name,breed):
+        self.__name=name
+        self.breed=breed
+    def set_dog_name(self,new_name):
+        self.__name=new_name
+    def get(self):
+       print(f"{ self.__name}")
+ 
+dog1=DOG("luffy","Golden Retriver")
+dog1.set_dog_name("luccy")
+dog1.get()
    
 
     
