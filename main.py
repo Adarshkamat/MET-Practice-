@@ -118,20 +118,22 @@
 #     print(a+animals[(i+1)%len(animals)][0:2])  
 
 #26-6-2025
-class DOG:
-    def __init__(self,name,breed):
-        self.__name=name
-        self.breed=breed
-    def set_dog_name(self,new_name):
-        self.__name=new_name
-    def get(self):
-       print(f"{ self.__name}")
+# class DOG:
+#     def __init__(self,name,breed):
+#         self.__name=name
+#         self.breed=breed
+#     def set_dog_name(self,new_name):
+#         self.__name=new_name
+#     def get(self):
+#        print(f"{ self.__name}")
  
-dog1=DOG("luffy","Golden Retriver")
-dog1.set_dog_name("luccy")
-dog1.get()
+# dog1=DOG("luffy","Golden Retriver")
+# dog1.set_dog_name("luccy")
+# dog1.get()
    
+# 1-7-25
+# PROJECT PRESENTATION
 
-    
-
+#2-7-2025
+#backend server REST API
  
