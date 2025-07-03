@@ -6,7 +6,7 @@ ch=input("Enter the word : ")
 
 # if response.status_code==200:
 #     for item in data:
-#         print(item["tag"][0])
+#         print(item["tags"][0])
 
 
 url=f"https://api.datamuse.com/words?rel_jjb={ch}"
