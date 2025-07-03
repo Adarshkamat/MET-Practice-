@@ -136,4 +136,62 @@
 
 #2-7-2025
 #backend server REST API
- 
+# class User:
+#     def __init__(self, name, m_id):
+#         self.name = name
+#         self.id = m_id
+#         self.cart = None
+
+# class Product:
+#     def __init__(self, p_name, price, quantity):
+#         self.p_name = p_name
+#         self.price = price
+#         self.quantity = quantity
+
+#     def is_available(self, quantity):
+#         return self.quantity >= quantity
+
+# class Cart:
+#     def __init__(self):
+#         self.items = []  # list of tuples: (Product, Quantity)
+
+#     def add_product(self, product, quantity):
+#         if product.is_available(quantity):
+#             product.quantity -= quantity
+#             self.items.append((product, quantity))
+#         else:
+#             print(f"Only {product.quantity} of {product.p_name} available. Cannot add {quantity}.")
+
+#     def display_cart(self):
+#         print("\n--- Cart Contents ---")
+#         sum=0
+#         for item, qty in self.items:
+#             print(f"{item.p_name} - Qty: {qty} - Price per unit: ₹{item.price} ")
+#             sum+=item.price*qty
+#         print(f"Estimated Total Bill {sum}")
+#         print("----------------------\n")
+
+# # # Usage
+# # user1 = User("Adarsh", 554)
+# # p1 = Product("Chips", 20, 50)
+# # p2 = Product("Soap", 30, 10)
+
+# # cart1 = Cart()
+# # user1.cart = cart1
+
+# # user1.cart.add_product(p1, 40)  # Adds 40 Chips
+# # user1.cart.add_product(p2, 5)   # Adds 5 Soaps
+# # user1.cart.display_cart()
+
+# class Student:
+#     def __init__(self,name,m1,m2,m3):
+#         self.name=name
+#         self.m1=m1
+#         self.m2=m2
+#         self.m3=m3
+#     def avg(self):
+#         print(f"The avg is {(self.m1+self.m2+self.m3)/3:.2f}")
+# s1=Student("ADARsh",98,86,93)
+# s1.avg()
+
+# 3-7-2025
