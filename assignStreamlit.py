@@ -4,7 +4,7 @@ s.title("Come Have Fun")
 word = s.text_input("Enter a word : ")
 btn = s.button(" Click To Generate")
 if btn:
-    url = ""
+    url = "https://api.datamuse.com/words?ml={}"
     response = requests.get(url)
     data = response.json()
     if response.status_code()==200:
