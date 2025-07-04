@@ -12,5 +12,4 @@ if btn:
             s.write(item["word"])
     else :
         s.write("There has been error")
-else:
-    s.toast("Are you Dumb as Bhavan")
+
