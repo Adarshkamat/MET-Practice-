@@ -215,11 +215,31 @@
 # remote1.press_power_off()  # Turns TV off
 # remote1.press_power_off()  # Tries turning off again
 
-class sui:
-    def uiii(self):
-        print("chris")
-class spped(sui):
-    pass
+# cla
 
-s=spped()
-s.uiii()
+class node:
+    def __init__(self,node):
+        self.data=node
+        self.next=None
+# n1=node(7)
+# print(n1.data)
+# print(n1.next)
+class linkedlist:
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        if self.head is None:
+            print()
+        else:
+            a=self.head
+            while a is not None:
+                print(a.data,end="->")
+                a=a.next
+n1=node(7)
+ll=linkedlist()
+ll.head=n1
+n2=node(6)
+n1.next=n2
+n3=node(6)
+n2.next=n3
+ll.traversal()
