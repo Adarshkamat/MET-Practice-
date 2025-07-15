@@ -364,103 +364,103 @@ def strongnum(n):
 #     print("Cannot be expressed as sum of two prime numbers")
 
 #42
-def sum_natural(n):
-    if n == 0:
-        return 0
-    return n + sum_natural(n - 1)
+# def sum_natural(n):
+#     if n == 0:
+#         return 0
+#     return n + sum_natural(n - 1)
 
-n = int(input("Enter a number: "))
-print("Sum =", sum_natural(n))
+# n = int(input("Enter a number: "))
+# print("Sum =", sum_natural(n))
 
-#43
-num = int(input("Enter a number: "))
-print("Factors:")
-for i in range(1, num + 1):
-    if num % i == 0:
-        print(i)
-
-
-
-#44
-a = float(input("Enter first number: "))
-b = float(input("Enter second number: "))
-op = input("Enter operator (+, -, *, /): ")
-
-if op == '+':
-    print("Result =", a + b)
-elif op == '-':
-    print("Result =", a - b)
-elif op == '*':
-    print("Result =", a * b)
-elif op == '/':
-    if b != 0:
-        print("Result =", a / b)
-    else:
-        print("Division by zero error!")
-else:
-    print("Invalid operator")
+# #43
+# num = int(input("Enter a number: "))
+# print("Factors:")
+# for i in range(1, num + 1):
+#     if num % i == 0:
+#         print(i)
 
 
 
-#45
-def factorial(n):
-    if n == 0 or n == 1:
-        return 1
-    return n * factorial(n - 1)
+# #44
+# a = float(input("Enter first number: "))
+# b = float(input("Enter second number: "))
+# op = input("Enter operator (+, -, *, /): ")
 
-n = int(input("Enter a number: "))
-print("Factorial =", factorial(n))
-
-
-#46
-def gcd(a, b):
-    if b == 0:
-        return a
-    return gcd(b, a % b)
-
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
-print("GCD =", gcd(a, b))
-
-
-
-#47
-# Binary to Decimal
-binary = input("Enter binary number: ")
-decimal = int(binary, 2)
-print("Decimal:", decimal)
-
-# Decimal to Binary
-decimal = int(input("Enter decimal number: "))
-binary = bin(decimal)[2:]
-print("Binary:", binary)
+# if op == '+':
+#     print("Result =", a + b)
+# elif op == '-':
+#     print("Result =", a - b)
+# elif op == '*':
+#     print("Result =", a * b)
+# elif op == '/':
+#     if b != 0:
+#         print("Result =", a / b)
+#     else:
+#         print("Division by zero error!")
+# else:
+#     print("Invalid operator")
 
 
 
+# #45
+# def factorial(n):
+#     if n == 0 or n == 1:
+#         return 1
+#     return n * factorial(n - 1)
+
+# n = int(input("Enter a number: "))
+# print("Factorial =", factorial(n))
 
 
-#48
-# Octal to Decimal
-octal = input("Enter octal number: ")
-decimal = int(octal, 8)
-print("Decimal:", decimal)
+# #46
+# def gcd(a, b):
+#     if b == 0:
+#         return a
+#     return gcd(b, a % b)
 
-# Decimal to Octal
-decimal = int(input("Enter decimal number: "))
-octal = oct(decimal)[2:]
-print("Octal:", octal)
+# a = int(input("Enter first number: "))
+# b = int(input("Enter second number: "))
+# print("GCD =", gcd(a, b))
+
+
+
+# #47
+# # Binary to Decimal
+# binary = input("Enter binary number: ")
+# decimal = int(binary, 2)
+# print("Decimal:", decimal)
+
+# # Decimal to Binary
+# decimal = int(input("Enter decimal number: "))
+# binary = bin(decimal)[2:]
+# print("Binary:", binary)
 
 
 
 
-#49
-def reverse(sentence):
-    if len(sentence) == 0:
-        return ""
-    return reverse(sentence[1:]) + sentence[0]
 
-s = input("Enter a sentence: ")
-print("Reversed:", reverse(s))
+# #48
+# # Octal to Decimal
+# octal = input("Enter octal number: ")
+# decimal = int(octal, 8)
+# print("Decimal:", decimal)
+
+# # Decimal to Octal
+# decimal = int(input("Enter decimal number: "))
+# octal = oct(decimal)[2:]
+# print("Octal:", octal)
+
+
+
+
+# #49
+# def reverse(sentence):
+#     if len(sentence) == 0:
+#         return ""
+#     return reverse(sentence[1:]) + sentence[0]
+
+# s = input("Enter a sentence: ")
+# print("Reversed:", reverse(s))
 
 
 #50
@@ -475,6 +475,179 @@ print("Reversed:", reverse(s))
 #         maxx=i
 # print(maxx)
     
+#59
+# char=input("Enter : ")
+# cahr=list(char)
+# c={}
+# for ch in cahr:
+#     if ch!=" ":
+#         if ch in c:
+#             c[ch]+=1
+#         else:
+#             c[ch]=1
+# print(c)
+
+#60
+# a=input("Enter : ")
+# vowels="aeiou"
+# vow_count=0
+# cont_count=0
+# for ch in a:
+#     if ch in vowels:
+#         vow_count+=1
+#     else:
+#         cont_count+=1
+# print(f"The vowels present are {vow_count} ,the consonants are {cont_count}")
+
+#61
+# a=input("enter : ")
+# r=""
+# for i in a:
+#     if i.isalpha():
+#         r+=i
+# print(r)
+
+#62
+# a=input("Enter a string : ")
+# count=0
+# for ch in a:
+#     count+=1
+# print(f"The length of the string is {count}")
+
+#63
+# str1=input("Enter : ")
+# str2=input("Enter : ")
+# strr=str1+str2
+# print(strr)
     
+#64
+# words = input("Enter words separated by spaces: ")
+# word_list = words.split()
+# word_list.sort()
+# print("Sorted words:", word_list)
+
+# 70. Program to find first and last digit of a number 
+# a=input("Enter digit : ")
+# first=a[0]
+# last=a[-1]
+# print(f"{first} first and {last} last")
+# # 71. Program to swap first and last digit of a number
+# a=input("Enter digit : ")
+# swapped=a[-1]+a[1:-1]+a[0]
+# print(swapped)
+# #72
+# a=input("Enter digit : ")
+# first=a[0]
+# last=a[-1]
+# summ=int(first)+int(last)
+# print(f"{summ}")
+
+# 73. Calculate sum of digits
+# a=input("Enter digit : ")
+# mul=1
+# for i in a:
+#     mul*=int(i)
+# print(mul)
+
+
+
+# 74. Calculate product of digits
+# a=input("Enter digit : ")
+# summ=0
+# for i in a:
+#     summ+=int(i)
+# print(summ)
+# 75. Find frequency of each digit in a given number
+# char=input("Enter digit : ")
+# cahr=list(char)
+# c={}
+# for ch in cahr:
+#     if ch!=" ":
+#         if ch in c:
+#             c[ch]+=1
+#         else:
+#             c[ch]=1
+# print(c)
+# 76. Find one’s compliment of a number
+
+# 77. Find two’s compliment of a number
+# 78. Sort names in alphabetical order
+# a=input("Enter : ")
+# b=a.split(",")
+# b.sort()
+# print(b)
+# 79. Merge two arrays and sort them in ascending order
+lis1=[23,4,5,1,5]
+lis2=[4,35,21,1,55]
+lis=lis1+lis2
+lis.sort()
+# print(lis)
+# 80. Find second largest element in an array
+# num=[5,3,6,2,6,2,69,8]
+# num.sort()
+# print(num[-2])
+# 81. Find second smallest element in an array
+# num=[5,3,6,2,69,8]
+# num.sort()
+# print(num[1])
+# 82. Split array from specified position and add first part to the end
+# a=list(map(int,input("Enter no : ").split(",")))
+# pos=int(input("Enter split position : "))
+# work=a[0:pos-1]
+# for w in work :
+#     a.remove(w)
+# a.extend(work)
+# print(a)
+# 83. Accept an array and swap elements using pointers
+# 84. Read an array and search for an element
+# num=list(map(int,input("Enter numbers :").split(",")))
+# tar=int(input("Enter the number to be searched : "))
+# for i in num:
+#     if i==tar:
+#         print(f"{i} found")
+#         break
+# 85. Print all repeated elements with frequency in an array
+# a=list(map(int,input("enter elements : ").split()))
+# rep={}
+# inlist={}
+# for i in a:
+#     if i in inlist:
+#         if i in rep:
+#             rep[i]+=1
+#         else:
+#             rep[i]=2
+#         inlist[i]+=1
+#     else:
+#         inlist[i]=1
+
+# print(rep)
+# 86. Print alternate elements in an array
+# a=list(map(int,input("enter elements : ").split()))
+# for i in range(0,len(a),2):
+#     print(a[i])
     
-    
+#87
+# a=list(map(int,input("enter elements : ").split()))
+# r=0
+# for i in range(len(a)):
+#     r=r^a[i]
+# print(r)
+#88
+# num=[34,63,63,73,332]
+# num.reverse()
+# print(num)
+#89
+# string="hello how are u"
+# stin=string[::-1]
+# print(stin)
+# #90
+# a=list(map(int,input("enter elements : ").split()))
+# temp=0
+# for i in range(0,len(a),2):
+#     temp=a[i]
+#     a[i]=a[i+1]
+#     a[i+1]=temp
+
+# print(a)
+
+#91
