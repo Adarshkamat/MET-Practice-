@@ -153,6 +153,28 @@ import math
 #         c[b]=1
 
 # print(c)
+
+
+#18
+# a=int(input("enter number : "))
+# temp=a
+# total=0
+# c={}
+# while True:
+#     if a%500==0:
+#         total+=500
+#         if c:
+#             c[200]+=1
+#         c[500]=1
+#         a-=500
+#     elif a%200==0:
+#         total+=200
+#         if c:
+#             c[200]+=1
+#         c[200]=1
+#         a-=200
+#     if total==temp:
+#         break
 # 23. Program to swap two numbers
 # a=int(input("ENTer : "))
 # b=int(input("ENTer : "))
@@ -569,8 +591,28 @@ def strongnum(n):
 #             c[ch]=1
 # print(c)
 # 76. Find one’s compliment of a number
+# num = int(input("Enter : "))
+# binary = bin(num)[2:]
+# ones=""
+# for bit in binary:
+#     if bit == '0':
+#         ones+="1"
+#     else:
+#         ones+="0"
+# print(ones)
 
 # 77. Find two’s compliment of a number
+# num=int(input("Enter no : "))
+# binary=bin(num)[2:]
+# ones=""
+# for bit in binary:
+#     if bit=="0":
+#         ones+="1"
+#     else:
+#         ones+="0"
+# num2=int(ones,2)+1
+# bin2=bin(num2)[2:]
+# print(bin2)
 # 78. Sort names in alphabetical order
 # a=input("Enter : ")
 # b=a.split(",")
@@ -651,3 +693,21 @@ lis.sort()
 # print(a)
 
 #91
+# num=[1,2,4,5,77,6]
+# num.insert(6,4)
+# print(num)
+
+#92
+# num=[1,2,4,5,77,6]
+# num.pop(3)
+# print(num)
+
+#92
+num=[[1,2,3],[4,5,6],[7,8,9]]
+summ=0
+for i in range(len(num)):
+    for j in range(len(num[0])):
+        if i==j:
+            summ+=num[i][j]
+
+print(f"The sum of diagonal elements are {summ}")
